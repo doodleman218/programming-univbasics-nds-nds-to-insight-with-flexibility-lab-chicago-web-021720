@@ -105,7 +105,7 @@ def movies_with_directors_set(source)
     while index < source.length
       director_set = []
       title_index = 0
-      #binding.pry
+      binding.pry
       director = source[index][:name]
       movies = source[index][:movies]
         while title_index < movies.length
