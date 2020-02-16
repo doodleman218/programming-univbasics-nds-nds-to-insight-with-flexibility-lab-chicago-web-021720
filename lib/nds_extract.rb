@@ -105,7 +105,6 @@ def movies_with_directors_set(source)
     while index < source.length
       director_set = []
       title_index = 0
-      binding.pry
       director = source[index][:name]
       movies = source[index][:movies]
         while title_index < movies.length
@@ -113,6 +112,7 @@ def movies_with_directors_set(source)
           movies[title_index][:director_name] = director
           director_set << movies[title_index]
           title_index += 1
+      binding.pry
         end
       index += 1
       total_array << director_set
