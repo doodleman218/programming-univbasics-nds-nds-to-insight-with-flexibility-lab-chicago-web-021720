@@ -112,12 +112,12 @@ def movies_with_directors_set(source)
           movies[title_index][:director_name] = director
           director_set << movies[title_index]
           title_index += 1
-      binding.pry
         end
       index += 1
       total_array << director_set
     end  
   total_array
+      binding.pry
 end
 
 # ----------------    End of Your Code Region --------------------
